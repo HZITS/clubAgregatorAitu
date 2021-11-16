@@ -9,48 +9,38 @@ class ClubCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+      margin: EdgeInsets.fromLTRB(13.0, 0.0, 13.0, 26.0),
       decoration: BoxDecoration(
+        color: Colors.black,
         borderRadius: BorderRadius.circular(15.0),
         image: DecorationImage(
-            fit: BoxFit.scaleDown,
-            image: AssetImage('assets/images/aitu_logo.png')),
+            fit: BoxFit.scaleDown, image: AssetImage(club.avatarURLHolder)),
       ),
       child: Card(
-        semanticContainer: true,
         clipBehavior: Clip.antiAliasWithSaveLayer,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(15.0),
         ),
-        color: Colors.black54,
-        elevation: 10,
+        color: Colors.black12,
+        elevation: 2.0,
         child: Column(
-          mainAxisSize: MainAxisSize.min,
+          mainAxisSize: MainAxisSize.max,
           children: <Widget>[
             ListTile(
               title: Text(
                 club.name,
-                style: TextStyle(color: Colors.white),
+                style: TextStyle(
+                  fontSize: 20.0,
+                  color: Colors.white,
+                  fontFamily: 'Roboto',
+                ),
               ),
               subtitle: Text(
                 club.eventTitle,
-                style: TextStyle(color: Colors.white),
-              ),
-            ),
-            ButtonTheme(
-              child: ButtonBar(
-                children: <Widget>[
-                  TextButton(
-                    child: const Text('Edit',
-                        style: TextStyle(color: Colors.white)),
-                    onPressed: () {},
-                  ),
-                  TextButton(
-                    child: const Text('Delete',
-                        style: TextStyle(color: Colors.white)),
-                    onPressed: () {},
-                  ),
-                ],
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 30.0,
+                ),
               ),
             ),
           ],

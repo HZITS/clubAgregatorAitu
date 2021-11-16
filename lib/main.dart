@@ -16,15 +16,51 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> {
   List<Club> clubs = [
-    Club(name: 'AITU', eventTitle: 'Meeting'),
-    Club(name: '3Ws', eventTitle: 'Play'),
-    Club(name: 'Art', eventTitle: 'Deadline'),
-    Club(name: 'Ds', eventTitle: 'Meeting'),
-    Club(name: '312Ws', eventTitle: 'Play'),
-    Club(name: 'Arfft', eventTitle: 'Deadline'),
-    Club(name: 'AIsddTU', eventTitle: 'Meeting'),
-    Club(name: '3W12s', eventTitle: 'Play'),
-    Club(name: 'Ardft', eventTitle: 'Deadline'),
+    Club(
+      name: 'AITU',
+      eventTitle: 'Meeting',
+      avatarURLHolder: 'assets/images/aitu_logo.png',
+    ),
+    Club(
+      name: '3Ws',
+      eventTitle: 'Play',
+      avatarURLHolder: 'assets/images/image_2.png',
+    ),
+    Club(
+      name: 'Art',
+      eventTitle: 'Deadline',
+      avatarURLHolder: 'assets/images/image_1.png',
+    ),
+    Club(
+      name: 'Ds',
+      eventTitle: 'Meeting',
+      avatarURLHolder: 'assets/images/image_1.png',
+    ),
+    Club(
+      name: '312Ws',
+      eventTitle: 'Play',
+      avatarURLHolder: 'assets/images/image_2.png',
+    ),
+    Club(
+      name: 'Arfft',
+      eventTitle: 'Deadline',
+      avatarURLHolder: 'assets/images/aitu_logo.png',
+    ),
+    Club(
+      name: 'AIsddTU',
+      eventTitle: 'Meeting',
+      avatarURLHolder: 'assets/images/image_1.png',
+    ),
+    Club(
+      name: '3W12s',
+      eventTitle: 'Play',
+      avatarURLHolder: 'assets/images/image_2.png',
+    ),
+    Club(
+      name: 'Ardft',
+      eventTitle: 'Deadline',
+      avatarURLHolder: 'assets/images/aitu_logo.png',
+    ),
   ];
 
   @override
