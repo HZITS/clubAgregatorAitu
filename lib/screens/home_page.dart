@@ -16,6 +16,37 @@ class HomeScreen extends StatelessWidget {
       extendBodyBehindAppBar: true,
       appBar: buildAppBar(),
       body: Body(),
+      bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Colors.black12,
+        elevation: 0,
+        items: const <BottomNavigationBarItem>[
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.home,
+              size: 30.0,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.apps,
+              size: 30.0,
+            ),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(
+              Icons.person,
+              size: 30.0,
+            ),
+            label: 'Home',
+          ),
+        ],
+        selectedItemColor: Colors.black,
+        unselectedItemColor: Colors.black26,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+      ),
     );
   }
 

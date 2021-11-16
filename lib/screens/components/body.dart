@@ -18,7 +18,7 @@ class Body extends StatelessWidget {
           HomeHeader(),
           VerticalSpacing(),
           RecentEventsComp(),
-          SectionTitle(title: "", press: () {})
+          SectionTitle(title: "Live events", press: () {})
         ],
       ),
     );
