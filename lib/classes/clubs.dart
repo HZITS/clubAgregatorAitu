@@ -1,5 +1,5 @@
 class Club {
-  String name;
+  final String name;
   String eventTitle;
   String avatarURLHolder;
 
